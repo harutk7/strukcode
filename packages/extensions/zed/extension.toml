@@ -1,0 +1,36 @@
+id = "strukcode"
+name = "StrukCode"
+description = "The open source coding agent."
+version = "1.1.4"
+schema_version = 1
+authors = ["Anomaly"]
+repository = "https://github.com/harutk7/strukcode"
+
+[agent_servers.strukcode]
+name = "StrukCode"
+icon = "./icons/strukcode.svg"
+
+[agent_servers.strukcode.targets.darwin-aarch64]
+archive = "https://github.com/harutk7/strukcode/releases/download/v1.1.4/strukcode-darwin-arm64.zip"
+cmd = "./strukcode"
+args = ["acp"]
+
+[agent_servers.strukcode.targets.darwin-x86_64]
+archive = "https://github.com/harutk7/strukcode/releases/download/v1.1.4/strukcode-darwin-x64.zip"
+cmd = "./strukcode"
+args = ["acp"]
+
+[agent_servers.strukcode.targets.linux-aarch64]
+archive = "https://github.com/harutk7/strukcode/releases/download/v1.1.4/strukcode-linux-arm64.tar.gz"
+cmd = "./strukcode"
+args = ["acp"]
+
+[agent_servers.strukcode.targets.linux-x86_64]
+archive = "https://github.com/harutk7/strukcode/releases/download/v1.1.4/strukcode-linux-x64.tar.gz"
+cmd = "./strukcode"
+args = ["acp"]
+
+[agent_servers.strukcode.targets.windows-x86_64]
+archive = "https://github.com/harutk7/strukcode/releases/download/v1.1.4/strukcode-windows-x64.zip"
+cmd = "./strukcode.exe"
+args = ["acp"]

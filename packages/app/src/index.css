@@ -1,0 +1,7 @@
+@import "@strukcode-ai/ui/styles/tailwind";
+
+:root {
+  a {
+    cursor: default;
+  }
+}
